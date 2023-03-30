@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string("stazione_di_arrivo");
             $table->time("orario_di_partenza");
             $table->time("orario_di_arrivo");
-            $table->tinyIntegr("numero_carrozze")->unsigned();
+            $table->mediumInteger("numero_carrozze")->unsigned();
             $table->boolean("in_orario");
             $table->boolean("cancellato");
             $table->timestamps();
