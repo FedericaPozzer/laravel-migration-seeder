@@ -16,6 +16,7 @@
     <div class="container">
         <h1 class="mt-5"> <b>TRAINS:</b></h1>
         @forelse($trains as $train)
+        {{-- @if($train->orario_di_partenza == 2023-03-30) ok, dovevo usare data e ora separstamente? --}}
 
         <div class="row">
             <div class="col-12 mt-3">
@@ -39,6 +40,7 @@
                
             </div>
         </div>
+        {{-- @endif --}}
 
         @empty <div class="mt-5">Nessun treno trovato <i class="bi bi-emoji-frown"></i> </div> 
         @endforelse
