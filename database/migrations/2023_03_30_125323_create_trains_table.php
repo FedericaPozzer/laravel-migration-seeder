@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string("azienda");
             $table->string("stazione_di_partenza");
             $table->string("stazione_di_arrivo");
-            $table->time("orario_di_partenza");
-            $table->time("orario_di_arrivo");
+            $table->dateTime("orario_di_partenza");
+            $table->dateTime("orario_di_arrivo");
             $table->mediumInteger("numero_carrozze")->unsigned();
             $table->boolean("in_orario");
             $table->boolean("cancellato");
